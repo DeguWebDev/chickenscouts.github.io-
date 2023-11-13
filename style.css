@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: #338590 url('clouds.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+    overflow-x: none;
+}
+
+a {
+    color: #245E66;
+}
+a:hover {
+    color: #164246;
+}
+
+img {
+    max-width: 100%;
+}
+
+header, main, footer {
+    padding: 15px 10%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oleo Script', cursive;
+    font-weight: normal;
+    margin-top: 0;
+}
+main>h1 {
+    display: none;
+}
+
+#logo {
+    display: block;
+    text-align: center;
+}
+#logo img {
+    max-height: 120px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.badge {
+    width: 150px;
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: -15px;
+    position: relative;
+    z-index: 99;
+}
+.badge img {
+    display: block;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+}
+
+
+.block {
+    background: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+    margin: 0 0 15px;
+}
+.block ul {
+    margin: 0;
+}
+.block ul li {
+    padding-top: 5px;
+}
+
+
+.wp-block-image {
+    margin: 18px 0 0!important;
+}
+.wp-block-image img {
+    border-radius: 5px!important;
+}
+
+
+
+footer {
+    color: #245E66;
+    opacity: 0.95;
+    font-size: 14px;
+    text-align: center;
+}
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 15px 5%;
+    }
+    h2 {
+        text-align: center;
+    }
+    .row {
+        display: block;
+    }
+    .badge {
+        width: auto;
+        margin: 0;
+    }
+    .badge img {
+        width: 150px;
+        display: block;
+        margin: 0 auto -20px;
+    }
+    .row .block {
+        
+    }
+}
+@media (max-width: 568px) {
+    #logo img {
+        max-height: 100px;
+    }
+}
+@media (max-width: 468px) {
+    #logo img {
+        max-height: 80px;
+    }
+}
